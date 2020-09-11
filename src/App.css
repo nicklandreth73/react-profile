@@ -1,0 +1,157 @@
+.App {
+  text-align: center;
+}
+/* special theme button position for consistency*/
+.themeButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* These are the two classes for the main body*/
+.lightText {
+  font-family: cursive;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  padding-top: 12vh;
+  margin-bottom: 0px;
+}
+.darkText {
+  font-family: "Times New Roman";
+  color: rgb(0, 0, 0);
+  height: 100%;
+  padding-top: 12vh;
+  margin-bottom: 0px;
+}
+/*Set the background to different pictures for dark or light mode. 
+These classes will expand the background for smaller divs
+*/
+.darkMode {
+  background-image: url("./Images/moon.jpg");
+  height: 200vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lightMode {
+  background-image: url("./Images/hills.jpg");
+  height: 200vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Menu text colors*/
+.menu-text-light {
+  color: azure;
+  display: block;
+  height: 2rem;
+  padding-inline-end: 2rem;
+}
+.menu-text-dark {
+  color: black;
+  display: block;
+  height: 2rem;
+  padding-inline-end: 2rem;
+}
+.menu-text-light:hover {
+  color: lightgrey;
+}
+.menu-text-dark:hover {
+  color: darkslategray;
+}
+/*Styling for the projects pancake*/
+.pancakePage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hotcakes {
+  flex: 0 1 150px;
+  margin: 20px;
+}
+/* These backgrounds follow content for longer components.*/
+.darkModeProject {
+  background-image: url("./Images/moon.jpg");
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10vh;
+  margin-bottom: 0px;
+}
+.lightModeProject {
+  background-image: url("./Images/hills.jpg");
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10vh;
+  margin-bottom: 0px;
+}
+/*carousel  customization for projects*/
+span.carousel-control-next-icon {
+  background-image: none;
+}
+span.carousel-control-prev-icon {
+  background-image: none;
+}
+img.carousel-image {
+  height: 22em;
+  min-width: 20em;
+}
+.carousel-label {
+  text-align: center;
+}
+/* Form rules*/
+.formContainer {
+  margin: 10% auto;
+  padding: 80px 0;
+  text-align: center;
+  justify-content: center;
+}
+.form-child {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+}
+.form-child:hover {
+  background-color: white;
+}
+.submit-button {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(41, 39, 46, 0.3);
+  width: 250px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+.submit-button:hover {
+  background-color: rgba(41, 39, 46, 0.7);
+}
+/*screen size rules for special situations. */
+@media only screen and (max-width: 500px) {
+  img.carousel-image {
+    height: 15em;
+    min-width: 12em;
+    max-width: 20em;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  img.carousel-image {
+    height: 30em;
+    min-width: 25em;
+  }
+}
